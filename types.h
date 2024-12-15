@@ -1,22 +1,34 @@
+/*
+ * Custom Types and Enumerations for Steganography Program
+ * 
+ * Description:
+ * This header file defines custom data types and enumerations used across 
+ * the steganography program. It provides:
+ * - A type alias `uint` for unsigned integers.
+ * - A `Status` enumeration to represent success or failure of operations.
+ * - An `OperationType` enumeration to differentiate between encoding, 
+ *   decoding, and unsupported operations.
+*/
+
 #ifndef TYPES_H
 #define TYPES_H
 
-/* User defined types */
+/* User-defined type for unsigned integers */
 typedef unsigned int uint;
 
-/* Status will be used in fn. return type */
+/* Enumeration for function return status */
 typedef enum
 {
-    e_success,
-    e_failure
+    e_success,   // Indicates successful operation
+    e_failure    // Indicates failed operation
 } Status;
 
-
+/* Enumeration for operation type */
 typedef enum
 {
-    e_encode,
-    e_decode,
-    e_unsupported
+    e_encode,      // Encoding operation
+    e_decode,      // Decoding operation
+    e_unsupported  // Unsupported operation
 } OperationType;
 
 #endif
