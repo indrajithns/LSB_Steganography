@@ -1,4 +1,4 @@
-# LSB Image Steganography on BMP Files
+# LSB Image Steganography
 
 ## Introduction
 This project implements **Least Significant Bit (LSB) Image Steganography** for embedding and extracting secret data within BMP image files. It provides functionalities for encoding a secret file into an image and decoding it back, using the BMP file format.
